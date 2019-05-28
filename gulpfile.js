@@ -59,7 +59,6 @@ gulp.task('watch', function(){
     gulp.watch(src + 'js/*.js', gulp.series('scripts'));
     gulp.watch(src + 'images/*', gulp.series('images'));
     gulp.watch(src + '**/*.html', gulp.series('pages'));
-    gulp.watch(src + '**/*.pug', gulp.series('views'));
 });
 
 gulp.task('views', function buildHTML() {
@@ -68,9 +67,6 @@ gulp.task('views', function buildHTML() {
         // Your options in here.
     }))
     .pipe(gulp.dest(target))
-    .pipe(browserSync.reload({ // Reloading with Browser Sync
-        stream: true
-    }));
 });
 
 //compile and watch
