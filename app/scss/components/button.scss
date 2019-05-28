@@ -1,8 +1,62 @@
 .button{
-    width: 336px;
-    height: 50px;
     border: solid 1px #4478bc;
-}
-p {
-    font-size: 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 8px;
+    background-color:#ffffff; 
+    text-align: center;
+    padding: 13px 131px;
+    a{
+        color: #2b578a;
+        letter-spacing: 1.8px;
+    }
+    &:hover{
+        background-color: #2b578a;
+        border: solid 1px #2b578a;
+        cursor: pointer;
+        a{
+            color: #fff;
+        }
+    }
+    &:active{
+        background-color: #1d3a5c;
+        border: solid 1px #1d3a5c;
+        cursor: pointer;
+        a{
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    &.medium{
+        padding: 8px 56px;
+    }
+    &.large{
+        padding: 14px 200px;
+    }
+    &.xlarge{
+        padding: 13px 298px;
+    }
+    &.red{
+        border: solid 1px #ed2e2b;
+        a{
+            color: #ed2e2b;
+        }
+        &:hover{
+            background-color: #ed2e2b;
+            border: solid 1px #ed2e2b;
+            cursor: pointer;
+            a{
+                color: #fff;
+            }
+        }
+        &:active{
+            background-color: #ad2220;
+            border: solid 1px #ad2220;
+            cursor: pointer;
+            a{
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
 }

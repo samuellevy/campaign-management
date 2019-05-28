@@ -12,14 +12,17 @@ var target = './webroot/';
 
 //compile
 gulp.task('sass', function(){
-    return gulp.src(src + 'scss/*')
+    return gulp.src([src + 'scss/*', "!"+src+'scss/components'])
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(target + 'css/'))
     .pipe(browserSync.reload({ // Reloading with Browser Sync
         stream: true
     }));
 });
-
+gulp.task('fonts', () =>
+    gulp.src(src + '/scss/fonts/**')
+        .pipe(gulp.dest('dist/fonts'))
+);
 gulp.task('scripts', function(){
     return gulp.src(src + 'js/*')
     .pipe(gulp.dest(target + 'js/'))
@@ -55,10 +58,10 @@ gulp.task('watch', function(){
         server: target,
         browser: "firefox"
     });
-    gulp.watch(src + 'scss/*.scss', gulp.series('sass'));
+    gulp.watch(src + 'scss/**/*.scss', gulp.series('sass'));
     gulp.watch(src + 'js/*.js', gulp.series('scripts'));
     gulp.watch(src + 'images/*', gulp.series('images'));
-    gulp.watch(src + '**/*.html', gulp.series('pages'));
+    gulp.watch(src + '**/*.pug', gulp.series('views'));
 });
 
 gulp.task('views', function buildHTML() {
@@ -67,10 +70,13 @@ gulp.task('views', function buildHTML() {
         // Your options in here.
     }))
     .pipe(gulp.dest(target))
+    .pipe(browserSync.reload({ // Reloading with Browser Sync
+        stream: true
+    }));
 });
 
 //compile and watch
-gulp.task('dev', gulp.series(gulp.parallel('clean', 'sass', 'scripts', 'images', 'views'), 'watch'), function(){
+gulp.task('dev', gulp.series(gulp.parallel('clean', 'sass', 'scripts', 'images', 'views', 'fonts'), 'watch'), function(){
     
 });
 
