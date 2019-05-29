@@ -1,9 +1,26 @@
 .inputbox{
+    display: flex;
+    align-items: center;
     input{
-        color: #000;
+        color: #2b578a;
         width: 520px;
         padding: 20px 0 20px 30px;
         border-radius: 5px;
         border: solid 1px #989898;
+        position: relative;
+    }
+    .focus{
+        border: solid 1px #2b578a;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .left_bar{
+            width: 7px;
+            height: 3px;
+            display: inline-block;
+            background-color: #2b578a;
+            padding: 30px 0;
+            margin-right: 5px;
+            border-radius: 7px;
     }
 }
