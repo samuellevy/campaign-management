@@ -6,7 +6,9 @@
     background-color:#ffffff; 
     text-align: center;
     padding: 13px 131px;
-    font-size: 17px;
+    font-size: 18px;
+    font-family: 'Verlag';
+    font-weight: 500;
     a{
         color: #2b578a;
         letter-spacing: 1.8px;
@@ -14,10 +16,11 @@
     &:hover{
         background-color: #2b578a;
         border: solid 1px #2b578a;
-        font-weight: bold;
         cursor: pointer;
         a{
             color: #fff;
+            font-weight: bold;
+            letter-spacing: 1.8px;
         }
     }
     &:active{
@@ -27,28 +30,54 @@
         a{
             color: #fff;
             font-weight: bold;
+            letter-spacing: 1.8px;
         }
     }
     &.medium{
         padding: 8px 56px;
+        &:hover{
+            a{
+                color: #fff;
+                font-weight: bold;
+                letter-spacing: 1.8px;
+            }
+        }
     }
     &.large{
         padding: 14px 200px;
+        &:hover{
+            a{
+                color: #fff;
+                font-weight: bold;
+                letter-spacing: 1.8px;
+            }
+        }
     }
     &.xlarge{
         padding: 13px 298px;
+        &:hover{
+            a{
+                color: #fff;
+                font-weight: bold;
+                letter-spacing: 1.8px;
+            }
+        }
     }
     &.red{
         border: solid 1px #ed2e2b;
         a{
             color: #ed2e2b;
+            letter-spacing: 1.8px;
         }
         &:hover{
             background-color: #ed2e2b;
             border: solid 1px #ed2e2b;
+
             cursor: pointer;
             a{
                 color: #fff;
+                font-weight: bold;
+                letter-spacing: 1.8px;
             }
         }
         &:active{
@@ -58,6 +87,7 @@
             a{
                 color: #fff;
                 font-weight: bold;
+                letter-spacing: 1.8px;
             }
         }
     }

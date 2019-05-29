@@ -9,19 +9,43 @@
         border-radius: 5px;
         border: solid 1px #989898;
         position: relative;
+        font-family: 'Verlag';
     }
-    .focus{
+    input[name="email"][class="input-active"]{
         border: solid 1px #2b578a;
         border-radius: 5px;
         font-weight: bold;
+        background: url('../images/a_inputicon_focus.png');
+        background-repeat: no-repeat;
+        background-position: 94% center;
+        z-index: 999;
     }
-    .left_bar{
-        width: 7px;
-        height: 3px;
-        display: inline-block;
-        background-color: #2b578a;
-        padding: 30px 0;
-        margin-right: 5px;
-        border-radius: 7px;
+    input[name="password"][class="input-active"]{
+        border: solid 1px #2b578a;
+        border-radius: 5px;
+        font-weight: bold;
+        background: url('../images/lock_inputicon_focus.png');
+        background-repeat: no-repeat;
+        background-position: 94% center;
+        z-index: 999;
+        &::before{
+            content: ">";
+        }
     }
 }
+
+
+// .focus{
+//     border: solid 1px #2b578a;
+//     border-radius: 5px;
+//     font-weight: bold;
+// }
+// .left_bar{
+//     width: 7px;
+//     height: 3px;
+//     display: inline-block;
+//     background-color: #2b578a;
+//     padding: 30px 0;
+//     margin-right: 5px;
+//     border-radius: 7px;
+// }

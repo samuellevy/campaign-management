@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Verlag';
+    src: url('Verlag-Bold.woff2') format('woff2'),
+        url('Verlag-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Verlag';
+    src: url('Verlag-Book.woff2') format('woff2'),
+        url('Verlag-Book.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Verlag';
+    src: url('Verlag-Black.woff2') format('woff2'),
+        url('Verlag-Black.woff') format('woff');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Verlag';
+    src: url('Verlag-Light.woff2') format('woff2'),
+        url('Verlag-Light.woff') format('woff');
+    font-weight: 300;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700,900&display=swap');
