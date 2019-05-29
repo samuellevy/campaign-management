@@ -21,7 +21,7 @@ gulp.task('sass', function(){
 });
 gulp.task('fonts', () =>
     gulp.src(src + '/scss/fonts/**')
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest(src + '/fonts'))
 );
 gulp.task('scripts', function(){
     return gulp.src(src + 'js/*')
