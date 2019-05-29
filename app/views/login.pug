@@ -8,6 +8,20 @@ body
         section.login
             .login-container
                 .login-content
+                    .greetingtext_intro
+                        img(src="../images/3aw_logo.png", alt="")
+                        .title
+                            h1 Bem-vindo ao Sistema 3AW!
                     form(action="", method="get")
                         .inputbox
-                            input(type="text")
+                            input(type="text" placeholder="E-mail")
+                            input(type="password" placeholder="Senha")
+                        .password_box
+                            .save
+                                input(type="checkbox")
+                                span  Salvar login e senha.
+                            .recover
+                                a(href="#") Recuperar senha
+                    .button.large
+                        a(href="") Confirmar
+                    
