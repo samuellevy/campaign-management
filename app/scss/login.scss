@@ -29,19 +29,20 @@
                 form{
                     .inputbox{
                         display: flex;
-                        flex-direction: column;
-                        input{
-                            margin: 20px 0;
-                        }
-                        input[name=email][class="input-inactive"]{
-                            background: url('../images/a_inputicon.png');
-                            background-repeat: no-repeat;
-                            background-position: 94% center;
-                        }
-                        input[name=name][class="input-inactive"]{
-                            background: url('../images/lock_inputicon.png');
-                            background-repeat: no-repeat;
-                            background-position: 94% center;
+                        .inputELement{
+                            input{
+                                margin: 15px 0;
+                            }
+                            input[name=email][class="input-inactive"]{
+                                background: url('../images/a_inputicon.png');
+                                background-repeat: no-repeat;
+                                background-position: 94% center;
+                            }
+                            input[name=name][class="input-inactive"]{
+                                background: url('../images/lock_inputicon.png');
+                                background-repeat: no-repeat;
+                                background-position: 94% center;
+                            }
                         }
                     }
                     .password_box{

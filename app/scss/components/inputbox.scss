@@ -2,15 +2,24 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    input{
-        color: #2b578a;
-        width: 520px;
-        padding: 20px 0 20px 30px;
-        border-radius: 5px;
-        border: solid 1px #989898;
-        position: relative;
-        font-family: 'Verlag';
+    width: auto;
+    position: relative;
+    .inputElement{
+        input{
+            color: #2b578a;
+            width: 520px;
+            padding: 20px 40px 20px 30px;
+            border-radius: 5px;
+            border: solid 1px #989898;
+            position: relative;
+            font-family: 'Raleway';
+        }
     }
+    .inputImage{
+        position: absolute;
+        right: 30px;
+    }
+
     input[name="email"][class="input-active"]{
         border: solid 1px #2b578a;
         border-radius: 5px;
@@ -20,18 +29,18 @@
         background-position: 94% center;
         z-index: 999;
     }
-    input[name="password"][class="input-active"]{
-        border: solid 1px #2b578a;
-        border-radius: 5px;
-        font-weight: bold;
-        background: url('../images/lock_inputicon_focus.png');
-        background-repeat: no-repeat;
-        background-position: 94% center;
-        z-index: 999;
-        &::before{
-            content: ">";
-        }
-    }
+    // input[name="password"][class="input-active"]{
+    //     border: solid 1px #2b578a;
+    //     border-radius: 5px;
+    //     font-weight: bold;
+    //     background: url('../images/lock_inputicon_focus.png');
+    //     background-repeat: no-repeat;
+    //     background-position: 94% center;
+    //     z-index: 999;
+    //     &::before{
+    //         content: ">";
+    //     }
+    // }
 }
 
 

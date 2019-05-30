@@ -14,8 +14,15 @@ body
                             h1 Bem-vindo<br /> ao Sistema 3AW!
                     form(action="", method="get")
                         .inputbox
-                            input(class="input-inactive" type="text" name="email" placeholder="E-mail")
-                            input(class="input-active" type="password" name="password" placeholder="Senha")
+                            .inputElement
+                                input(class="input-active" type="text" name="email" placeholder="E-mail")
+                            .inputImage
+                                img(src="../images/a_inputicon.png", alt="")
+                        .inputbox
+                            .inputElement
+                                input(class="input-active" type="password" name="password" placeholder="Senha")
+                            .inputImage
+                                img(src="../images/a_inputicon.png", alt="")
                         .password_box
                             .save
                                 input(type="checkbox")
