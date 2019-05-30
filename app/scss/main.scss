@@ -5,5 +5,15 @@
 @import "components/campaign_filter_button";
 @import "components/inputbox";
 @import "login.scss";
-@import "components/campaing_components";
-@import "components/dropdown_campaing";
+@import "components/campaign_components";
+@import "components/dropdown_campaign";
+
+.wrapper{
+    width: 1433px;
+    display: block;
+    margin: 0 auto;
+}
+
+a, p, span, h1, h2, h3, h4{
+    font-family: 'Raleway'
+}

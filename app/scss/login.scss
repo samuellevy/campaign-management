@@ -1,79 +1,77 @@
-.wrapper{
-    section.login{
-        background: url('../images/3aw_login_bg.png');
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        background-size: 695px;
-        min-height: 100vh;
-        .login-container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            .login-content{
-                width: 520px;
-                .greetingtext_intro{
-                    img{
-                        margin: 0 auto;
+section.login{
+    background: url('../images/3aw_login_bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 695px;
+    min-height: 100vh;
+    .login-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        .login-content{
+            width: 520px;
+            .greetingtext_intro{
+                img{
+                    margin: 0 auto;
+                }
+                .title{
+                    padding: 15px 0 0 0 ;
+                    margin-bottom: 60px;
+                    h1{
+                        text-align: center;
+                        color: #4478bc;
+                        font-size: 45px;
                     }
-                    .title{
-                        padding: 15px 0 0 0 ;
-                        margin-bottom: 60px;
-                        h1{
-                            text-align: center;
-                            color: #4478bc;
-                            font-size: 45px;
+                }
+            }
+            form{
+                .inputbox{
+                    display: flex;
+                    .inputELement{
+                        input{
+                            margin: 15px 0;
+                        }
+                        input[name=email][class="input-inactive"]{
+                            background: url('../images/a_inputicon.png');
+                            background-repeat: no-repeat;
+                            background-position: 94% center;
+                        }
+                        input[name=name][class="input-inactive"]{
+                            background: url('../images/lock_inputicon.png');
+                            background-repeat: no-repeat;
+                            background-position: 94% center;
                         }
                     }
                 }
-                form{
-                    .inputbox{
-                        display: flex;
-                        .inputELement{
-                            input{
-                                margin: 15px 0;
-                            }
-                            input[name=email][class="input-inactive"]{
-                                background: url('../images/a_inputicon.png');
-                                background-repeat: no-repeat;
-                                background-position: 94% center;
-                            }
-                            input[name=name][class="input-inactive"]{
-                                background: url('../images/lock_inputicon.png');
-                                background-repeat: no-repeat;
-                                background-position: 94% center;
-                            }
+                .password_box{
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    .save{
+                        input{
+                            width: auto;
+                            color:#003f7b;
+                        }
+                        span{
+                            font-size: 16px;
+                            color: #003f7b;
+                            letter-spacing: 1.6px;
                         }
                     }
-                    .password_box{
-                        display: flex;
-                        width: 100%;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: space-between;
-                        .save{
-                            input{
-                                width: auto;
-                                color:#003f7b;
-                            }
-                            span{
-                                font-size: 16px;
-                                color: #003f7b;
-                                letter-spacing: 1.6px;
-                            }
-                        }
-                        .recover{
-                            a{
-                                font-size: 16px;
-                                color: #2b578a;
-                                font-weight: bold;
-                            }
+                    .recover{
+                        a{
+                            font-size: 16px;
+                            color: #2b578a;
+                            font-weight: bold;
                         }
                     }
                 }
-                .button.large{
-                    margin-top: 30px;
-                }
+            }
+            .button.large{
+                margin-top: 30px;
             }
         }
     }
