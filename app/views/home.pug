@@ -4,5 +4,28 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
         title 123
 body
-    .wrapper   
-        p teste
+    .wrapper
+        section.navbar
+            .drowpdownselect
+                a(href="" class="dropdown_inactive") Selecionar Job
+                img(src="", alt="")
+                .dropdown_menu
+                    .dropdown_item
+                        a(href="") Action
+                    .dropdown_item
+                        a(href="") Action
+                    .dropdown_item
+                        a(href="") Action
+                    .dropdown_item
+                        a(href="") Adicionar
+            .search_bar
+                .search_icon
+                    img(src="", alt="")
+                .search_input
+                    input(type="text" name="searchbar" placeholder="Buscar peça") 
+            .userprofile_box
+                img(src="../images/profile-picture.png", alt="")
+                .username
+                    span Carla Basille
+                    .logout
+                        a(href="") sair
