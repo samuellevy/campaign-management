@@ -7,9 +7,10 @@ body
     .wrapper
         section.navbar
             .drowpdownselect
-                a(href="" class="dropdown_inactive") Selecionar Job
-                img(src="", alt="")
-                .dropdown_menu
+                .dropdown_menu_action
+                    a(href="" class="dropdown_inactive") Selecionar Job
+                    img(src="", alt="")
+                .dropdown_menu.inactive_dropdown_menu
                     .dropdown_item
                         a(href="") Action
                     .dropdown_item
@@ -29,3 +30,25 @@ body
                     span Carla Basille
                     .logout
                         a(href="") sair
+        section.campaign_management
+            .drowpdownselect
+                .dropdown_menu_action
+                    a(href="" class="dropdown_inactive") Campanha
+                    img(src="", alt="")
+                .dropdown_menu.inactive_dropdown_menu
+                    .dropdown_item
+                        a(href="") Action
+                    .dropdown_item
+                        a(href="") Action
+                    .dropdown_item
+                        a(href="") Action
+                    .dropdown_item
+                        a(href="") Adicionar
+            .button.medium
+                a(href="") Adicionar
+    section.campaigns_container
+        .wrapper
+            .campaign_filter_bar
+                .campaign_filter_button
+                    img(src="../images/filter.png", alt="")
+                    a(href="") Filtros

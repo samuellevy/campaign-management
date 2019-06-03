@@ -20,7 +20,7 @@ body
         a(href="#") Instagram
     .inputbox
         .inputElement
-            input(type="text" placeholder="E-mail")
+            input(type="text" name="email" placeholder="E-mail")
         .inputImage
             img(src="../images/a_inputicon.png", alt="")
     .campaign_name
@@ -35,8 +35,9 @@ body
         .jobid
             span Product Head
     .drowpdownselect
-        a(href="" class="dropdown_inactive") Selecionar Job
-        img(src="", alt="")
+        .dropdown_menu_action
+            a(href="" class="dropdown_inactive") Selecionar Job
+            img(src="", alt="")
         .dropdown_menu
             .dropdown_item
                 a(href="") Action

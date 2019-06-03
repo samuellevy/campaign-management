@@ -1,8 +1,36 @@
 .wrapper{
+    position: relative;
     section.navbar{
         width: 100%;
         min-height: 40px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+    section.campaign_management{
+        display: flex;
+        justify-content: space-between;
+        min-height: 120px;
+        align-items: flex-end;
+    }
+}
+.campaigns_container{
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .campaign_filter_bar{
+        .campaign_filter_button{
+            img{
+                display: inline;
+                margin-right: 10px;
+            }
+        }
+    }
+    .greyborder{
+        width: 100%;
+        border-top: solid 1px #f2f3f3;
+        border-bottom: solid 1px #f2f3f3;
+        min-height: 60px;
     }
 }

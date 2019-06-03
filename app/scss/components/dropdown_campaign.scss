@@ -1,7 +1,5 @@
 .drowpdownselect{
     display: block;
-    position: relative;
-    // width:245px;
     a{
         font-size: 16px;
     }
@@ -18,10 +16,12 @@
         width: 215px;
         border-radius: 5px;
         top: 35px;
-        height: 200px;
         .dropdown_item{
             padding: 12px 95px 12px 10px;
             position: relative;
+            a{
+                width: 100%;
+            }
             &:after{
                 content: "";
                 display: block;
@@ -35,6 +35,8 @@
                 z-index: 999;
             }
             &:last-child{
+                padding-top: 12px;
+                padding-bottom: 13px;
                 &:after{
                     display: none;
                 }
@@ -42,6 +44,12 @@
             &:hover{
                 background-color:#e2effc;
             }
+        }
+        &.active_dropdown_menu{
+            display: block;
+        }
+        &.inactive_dropdown_menu{
+            display: none;
         }
     }
 }

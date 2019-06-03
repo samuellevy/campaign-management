@@ -20,27 +20,31 @@
         right: 30px;
     }
 
-    input[name="email"][class="input-active"]{
+    input[name="email"]{
         border: solid 1px #2b578a;
         border-radius: 5px;
         font-weight: bold;
-        background: url('../images/a_inputicon_focus.png');
-        background-repeat: no-repeat;
-        background-position: 94% center;
         z-index: 999;
+        &.input-active{
+            background: url('../images/a_inputicon_focus.png');
+            background-repeat: no-repeat;
+            background-position: 94% center;
+        }
     }
-    // input[name="password"][class="input-active"]{
-    //     border: solid 1px #2b578a;
-    //     border-radius: 5px;
-    //     font-weight: bold;
-    //     background: url('../images/lock_inputicon_focus.png');
-    //     background-repeat: no-repeat;
-    //     background-position: 94% center;
-    //     z-index: 999;
-    //     &::before{
-    //         content: ">";
-    //     }
-    // }
+    input[name="password"][class="input-active"]{
+        border: solid 1px #2b578a;
+        border-radius: 5px;
+        font-weight: bold;
+        z-index: 999;
+        &:before{
+            content: ">";
+        }
+        &.input-active{
+            background: url('../images/lock_inputicon_focus.png');
+            background-repeat: no-repeat;
+            background-position: 94% center;
+        }
+    }
 }
 
 
