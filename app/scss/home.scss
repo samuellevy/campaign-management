@@ -14,23 +14,86 @@
         align-items: flex-end;
     }
 }
-.campaigns_container{
+section.campaigns_container{
     min-height: 60px;
     display: flex;
     align-items: center;
     position: relative;
-    .campaign_filter_bar{
-        .campaign_filter_button{
-            img{
-                display: inline;
-                margin-right: 10px;
-            }
-        }
-    }
-    .greyborder{
+    margin-top: 20px;
+    .greybar{
         width: 100%;
+        background-color: #fff;
+        position: absolute;
+        height: 73px;
+        top: 0;
         border-top: solid 1px #f2f3f3;
         border-bottom: solid 1px #f2f3f3;
-        min-height: 60px;
+    }
+    .wrapper{
+        .campaign_filter_bar{
+            .campaign_filter_button{
+                margin: 20px 0; 
+                img{
+                    display: inline;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .campaign_content{
+            .campaign_markers{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 20px;
+                .list_marker{
+                    padding: 20px;
+                } 
+            }
+        }
+        .campaign_list{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              max-height: 600px;
+              overflow: scroll;
+              overflow-x: hidden;
+              .campaign_list_item{
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  justify-content: space-between;
+                  padding: 25px 0;
+                  border: solid 2px #f2f3f3;
+                  border-radius: 5px;
+                  padding: 20px;
+                  margin-top: 30px;
+                  .campaign_name{
+                      width: 20%
+                  }
+                  .campaign_date{
+                      width: 20%;
+                      display: flex;
+                      justify-content: flex-start;
+                      span{
+                        margin-left: 50px;
+                      }
+                  }
+                  .campaign_client{
+                    width: 20%;
+                    display: flex;
+                    justify-content: center;
+                  }
+                  .campaign_in_charge{
+                      .profile-pic{
+                          img{
+                            border-radius: 50%;
+                            width: 33px;
+                            height: 33px;
+                            margin-right: 10px;
+                          }
+                      }
+                  }
+              }
+        }
     }
 }
