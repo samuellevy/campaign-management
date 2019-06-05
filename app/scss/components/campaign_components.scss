@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     .campaign_name{
+        position: relative;
+        .social_network{
+            position: absolute;
+        }
         h2{    
             font-size: 16px;
             font-family: 'Raleway';
@@ -56,16 +60,41 @@
             }
         }
     }
-    // &:after{
-    //     content: "";
-    //     position: absolute;
-    //     display: inline-block;
-    //     width: 2px;
-    //     height: 20px;
-    //     margin: 0 5px;
-    //     background-color: #000;
-    //     right: 0;
-    // }
+    .campaign_size{
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 2px; 
+        color: #000;
+    }
+    .campaign_format{
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 2px; 
+        color: #000;
+    }
+    .campaign_fase{
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 2px; 
+        color: #000;
+    }
+    .campaign_status{
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 2px; 
+        color: #000;
+    }
+    .campaign_objective{
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 2px; 
+        color: #000;
+    }
 }
 .userprofile_box{
     display: flex;
