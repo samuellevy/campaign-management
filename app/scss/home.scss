@@ -2,7 +2,7 @@
     position: relative;
     section.navbar{
         width: 100%;
-        min-height: 40px;
+        min-height: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -56,7 +56,23 @@ section.campaigns_container{
               justify-content: space-between;
               max-height: 600px;
               overflow: scroll;
-              overflow-x: hidden;
+            //   padding-right: 20px;
+            //   overflow-x: hidden;
+            &::-webkit-scrollbar {
+                border-radius: 10px;
+                height: 10px;
+                width: 0px;
+              }
+            
+              &::-webkit-scrollbar-thumb {
+                background: #999;
+                border-radius: 10px;
+                
+              }
+            
+              &::-webkit-scrollbar-track {
+                border-radius: 10px;
+              }
               .campaign_list_item{
                   display: flex;
                   flex-direction: row;
@@ -66,7 +82,14 @@ section.campaigns_container{
                   border: solid 2px #f2f3f3;
                   border-radius: 5px;
                   padding: 20px;
-                  margin-top: 30px;
+                  margin-top: 20px;
+                  &:hover{
+                      border: solid 2px #2b578a;
+                      cursor: pointer;
+                  }
+                  &:active{
+                      background-color: #e2effc;
+                  }
                   .campaign_name{
                       width: 20%
                   }
@@ -75,13 +98,15 @@ section.campaigns_container{
                       display: flex;
                       justify-content: flex-start;
                       span{
-                        margin-left: 50px;
+                        margin-left: 54px;
                       }
                   }
                   .campaign_client{
                     width: 20%;
                     display: flex;
                     justify-content: center;
+                    span{
+                    }
                   }
                   .campaign_in_charge{
                       .profile-pic{

@@ -1,6 +1,5 @@
 .search_bar{
     position: relative;
-    width: 0%;
     .search_icon{
         position: absolute;
     }
@@ -10,6 +9,7 @@
             font-weight: bold;
             font-size: 12px;
             color: #707070;
+            text-align: center;
             &:focus{
                 border-bottom: solid 1px #000;
             }
