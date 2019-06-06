@@ -1,22 +1,32 @@
-.campaign_filter_bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .addcampaign{
+.campaigns_container.selected{
+    .campaign_filter_bar{
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        span{
-            color: #2b578a;
-        }
-        img{
-            margin-right: 5px;
+        .addcampaign{
+            display: flex;
+            align-items: center;
+            span{
+                color: #2b578a;
+            }
+            img{
+                margin-right: 5px;
+            }
         }
     }
-}
-.campaign_markers{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 0 50px;
+    .campaign_markers{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 0 50px;
+    }
+    .campaign_list{
+        .campaign_list_item{
+            .campaign_name{
+                width: 15%;
+                overflow: hidden;
+            }
+        }
+    }
 }
