@@ -45,8 +45,9 @@ section.campaigns_container{
                 width: 100%;
                 justify-content: space-between;
                 margin-top: 20px;
+                padding: 0 20px;
                 .list_marker{
-                    padding: 20px;
+                    // padding: 20px;
                 } 
             }
         }
@@ -130,6 +131,7 @@ section.campaigns_container{
             .addcampaign{
                 display: flex;
                 align-items: center;
+                font-size: 14px;
                 span{
                     color: #2b578a;
                 }
@@ -143,19 +145,103 @@ section.campaigns_container{
             width: 100%;
             justify-content: space-between;
             margin-top: 20px;
-            padding: 0 50px;
+            padding: 0 80px 0 50px!important;
+            .selected_state_mode{
+                display: flex;
+                justify-content: space-evenly;
+                width: 60%;
+                .list_marker{
+                    width:20%;
+                    display: flex;
+                    justify-content: flex-start;
+                    &:last-child{
+                        width: 20%;
+                        justify-content: flex-start;
+                    }
+                    // &:first-child{
+                    //     width: auto;
+                    // }
+                }
+            }
+            .list_marker{
+                &:first-child{
+                    width: 20%;
+                }
+                &:last-child{
+                    width: 20%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
         }
         .campaign_list{
             .campaign_list_item{
                 position: relative;
+                .selected_state_mode{
+                    display: flex;
+                    // justify-content: space-between;
+                    width: 60%;
+                    .campaign_size{
+                        width: 20%;
+                        display: flex;
+                    }
+                    .campaign_format{
+                        width: 5%;
+                        display: flex;
+                    }
+                    .campaign_date{
+                        width: 15%;
+                        display: flex;
+                    }
+                    .campaign_fase{
+                        width: 16%;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .campaign_status{
+                        width: 18%;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .campaign_objective{
+                        width: 25%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
                 .social_network{
                     position: absolute;
                 }
                 .campaign_name{
-                    width: 8%;
+                    width: 19%;
                     overflow: hidden;
                     white-space: nowrap;
-                    margin-left: 50px;
+                    margin-left: 30px;
+                    h2{
+                        font-size: 14px;
+                    }
+                }
+                .campaign_in_charge{
+                    margin-right: 60px;
+                    width: 20%;
+                    display: flex;
+                    justify-content: flex-end;
+                    .profile-pic{
+                        img{
+                            width: 28px;
+                            height: 28px;
+                        }
+                    }
+                    .name{
+                        span{
+                            font-size: 14px;
+                        }
+                    }   
+                    .jobid{
+                        span{
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }
